@@ -1,64 +1,64 @@
 # Monopoly
-Versão simplificada do jogo de tabuleiro Monopoly feita como trabalho para a matéria de Programação Orientada a Objetos. Monopoly é um jogo de compra e venda de propriedades em que o objetivo é conseguir monopólios e fazer outros jogadores irem à falência.
+Simplified version of the Monopoly made as an assignment for the Object Oriented Programming subject. Monopoly is a property buying and selling game where the objective is to acquire monopolies and make other players bankrupt.
 
-## Regras
-- De 2 a 4 jogadores;
-- A ordem dos jogadores é definida por meio do lançamento de dados;
-- Todos os jogadores começam com $1500;
-- O jogo possui um tabuleiro linear e circular, sendo que a movimentação dos jogadores é definida pela soma do resultado do lançamento de dois dados;
-- Se o jogador tirar dupla (dois dados iguais) no lançamento de dados, ele jogará de novo na próxima rodada.
-- Se o saldo do jogador chegar ao negativo, ele chega à falência, tendo que entregar todas as propriedades as banco e ser removido do jogo. Se isso ocorrer durante o pagamento a outro jogadores, suas propriedades vão para sua posse. Todas as construções são destruídas nesse processo.
+## Rules
+- 2 to 4 players;
+- The order of the players is defined by rolling dice;
+- All players start with $1500;
+- The game has a linear and circular board, and the movement of the players is defined by the sum of the result of rolling two dice;
+- If the player rolls a double (two equal dice) on the dice roll, he rolls again on the next round.
+- If the player's balance reaches negative, he becomes bankrupt, having to hand over all properties to the bank and be removed from the game. If this occurs while paying another player, their properties go into your possession. All buildings are destroyed in this process.
 
-## Espaços
-### Ponto de Partida
-É onde os jogadores começam. Sempre que o jogador der uma volta completa no tabuleiro e passar por este espaço novamente, ele ganha $200.
+## Spaces
+### Starting Point
+It's where players start. Whenever the player goes around the board and passes through this space again, he wins $200.
 
-### Taxa de Riqueza & Imposto de Renda
-Fazem com que o jogador pague uma quantidade de dinheiro. No caso da taxa de riqueza, o valor é fixo e, no caso do imposto de renda, o jogador pode escolher entre pagar um valor fixo ou uma porcentagem de sua fortuna (dinheiro, propriedades e construções).
+### Wealth Tax & Income Tax
+They make the player pay an amount of money. In the case of the wealth tax, the amount is fixed and, in the case of the income tax, the player can choose between paying a fixed amount or a percentage of his wealth (money, properties and buildings).
 
-### Espaço de Carta
-Fazem o jogador tirar uma carta de um dos deques do jogo (cofre e sorte), que são aleatorizados e ditam uma ação que o jogador deve tomar.
+### Card Space
+The player draws a card from one of the game's dykes (vault and luck), which are randomized and dictate an action the player must take.
 
-### Propriedades
-Espaços que podem ser comprados e negociados pelos jogadores e têm um aluguel a ser pago pelos jogadores que caem neles ao proprietário. Possuem três tipos:
-- Lote: possuem uma cor. Quando todos os lotes de uma cor pertencerem ao mesmo jogador, ele ganha o monopólio daquela cor, fazendo com que o aluguel desses lotes dobre. Quando o monopólio é conquistado, o jogador pode construir uma casa nos seus lotes (que aumenta o aluguel) e, quando todos tiverem uma casa, um hotel que substituirá a casa.
-- Utilidade: agrupa a companhia elétrica e a de distribuição de água. O aluguel depende do valor tirado nos dados e da quantidade de utilidades que o jogador possui.
-- Estação de Metrô: o aluguel depende da quantidade de estações que o jogador possui.
+### Properties
+Spaces that can be bought and traded by players and have a rent to be paid by players who land on them to the owner. They have three types:
+- Lot: have one color. When all lots of a color belong to the same player, he gains the monopoly on that color, causing the rent on those lots to double. When the monopoly is conquered, the player can build a house on their lots (which increases the rent) and, when everyone has a house, a hotel that will replace the house.
+- Utility: groups the electric company and the water distribution company. The rent depends on the value rolled on the dice and the amount of utilities the player has.
+- Subway Station: the rent depends on the amount of stations the player owns.
 
-Em seu turno, o jogador poderá fazer quantas ofertas pela propriedade alheia ele quiser. Se uma oferta sobre um lote com monopólio for aceita, o jogador perde o monopólio e também a construção (caso tenha).
+On his turn, the player can make as many offers for someone else's property as he wants. If an offer on a monopoly lot is accepted, the player loses the monopoly and also the building (if any).
 
-### Vá para a Cadeia
-Faz com que o jogador sejá preso.
+### Go to Jail
+The player goes to jail.
 
-### Cadeia
-Onde os jogadores ficam quando estão presos (se um jogador livre cair nesse espaço, nada acontece).
+### Chain
+Where players are when they are trapped (if a free player lands on this space, nothing happens).
 
-### Estacionamento Grátis
-Nada acontece nesse espaço
+### Free Parking
+Nothing happens in this space
 
-## Prisão
-O jogador pode ser preso caso:
-- Tire três duplas seguidas;
-- Tire a carta "vá para a cadeia";
-- Caia no espaço "vá para a cadeia".
+## Prison
+The player can be arrested if:
+- Get three doubles in a row;
+- Take the "go to jail" card;
+- Fall into the "go to jail" space.
 
-Enquanto estiver preso, ele não pode receber aluguéis e, para conseguir soltura:
-- 1ª rodada preso: pode pagar fiança ou tentar tirar dupla;
-- 2ª rodada preso: pode pagar fiança ou tentar tirar dupla;
-- 3ª rodada preso: deverá tentar tirar dupla;
-- 4ª rodada preso: deverá pagar fiança (se não for possível, o jogador falirá).
+While in prison, he cannot receive rent, and to obtain release:
+- 1st round arrested: can pay bail or try to take double;
+- 2nd round arrested: can pay bail or try to take double;
+- 3rd round trapped: you must try to take a double;
+- 4th round arrested: must pay bail (if not possible, the player will go bankrupt).
 
-## Vitória
-O jogador é declarado o vencedor caso:
-- todos os outros falirem;
-- conseguir dois monopólios;
-- conseguir construir um hotel.
+## Victory
+The player is declared the winner if:
+- all others go bankrupt;
+- get two monopolies;
+- manage to build a hotel.
 
-## Autores
+## Authors
 - [Caike dos Santos](https://github.com/CaikeSantos)
 - [Guilherme Bortoletto](https://github.com/guilherme-bortoletto)
 - [Marcelo Pirro](https://github.com/marcelopirro)
 - [Ryan Sakurai](https://github.com/ryansakurai)
 - [Vinicius Castro](https://github.com/vinciuscastro)
 
-(Estudantes de Ciência da Computação na UFSCar)
+(Computer Science Students at UFSCar)
